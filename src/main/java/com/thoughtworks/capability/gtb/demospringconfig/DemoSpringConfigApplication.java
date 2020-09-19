@@ -11,15 +11,15 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 @SpringBootApplication
 public class DemoSpringConfigApplication implements ApplicationRunner {
 
-	@Autowired
-	private MailConfig mailConfig;
+    @Autowired
+    private MailConfig mailConfig;
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoSpringConfigApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(DemoSpringConfigApplication.class, args);
+    }
 
-	@Override
-	public void run(ApplicationArguments args) throws Exception {
-		System.out.println(mailConfig);
-	}
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+        System.out.println(mailConfig);
+    }
 }
